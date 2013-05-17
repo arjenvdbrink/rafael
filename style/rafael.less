@@ -1,5 +1,41 @@
-
 /*
  * Here the Rafael-specific style in less
  * Be aware that this is a less-file which needs to be compiled to a css
  */
+
+// Body background options (set in admin options panel)
+.linen {
+  background: url(images/bg-rafael.png) repeat !important;
+}
+
+.navbar-inner {
+  background-image: url(images/quick-bar.png) !important;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  background-size: initial;
+  background-repeat-x: no-repeat;
+  background-repeat-y: no-repeat;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: initial;
+  min-width: 960px;
+
+  height: 48px;
+
+  // Position the main-menu
+  .container {
+    padding-top: 4px;
+  }
+
+  // Set color of top-level menu
+  #main-menu>li>a {
+    color: white;
+  }
+
+  // Set color of text in search-box
+  form>input.search-query {
+    // # todo: change the color of the placeholder
+  }
+
+}

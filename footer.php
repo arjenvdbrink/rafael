@@ -13,48 +13,50 @@
 
 <footer>
 	<div class="container">
-	<div class="copyright span6">
-		<img src="/wp-content/themes/Foursquare_Two/assets/images/logo-footer.png"><br />
-		&copy; 
-		<script type="text/javascript"> 
-			now = new Date
-			theYear=now.getYear()
-			if (theYear < 1900)
-			theYear=theYear+1900
-			document.write(theYear)
-        </script>
-		<a href="<?php echo home_url( '/' ) ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a><br />
-        <!--
-		<span><a href="http://www.rafael.nl" alt="Een Rafa&euml;l gemeente">Een Rafa&euml;l gemeente</a></span>
-		-->
-	</div><!--End copyright-->
-	
-	<div class="social">
-    	<?php /*Checks to see if primary admin has a Twitter or Facebook account. If so, it will display the icons next to the RSS icon in the main menu.  */ ?>
-    	<?php if ( get_the_author_meta( 'facebook',1) ) { ?>
-    	<div class="facebook">
-        	<a href="<?php the_author_meta( 'facebook',1); ?>">Facebook</a>
-    	</div>
-    	<?php } // End check for facebook ?>
+		<div class="copyright span6">
 
-    	<?php if ( get_the_author_meta( 'googleplus',1) ) { ?>
-    	<div class="googleplus">
-        	<a href="<?php the_author_meta( 'googleplus',1); ?>">Google+</a>
-    	</div>
-    	<?php } // End check for google ?>
-    	
-    	<?php if ( get_the_author_meta( 'twitter',1) ) { ?>
-    	<div class="twitter">
-        	<a href="http://twitter.com/<?php the_author_meta( 'twitter',1); ?>">Twitter</a>
-    	</div>
-    	<?php } // End check for twitter ?>
-    	
-    	<?php if ( get_the_author_meta( 'pinterest',1) ) { ?>
-    	<div class="pinterest">
-        	<a href="http://pinterest.com/<?php the_author_meta( 'pinterest',1); ?>">Pinterest</a>
-    	</div>
-    	<?php } // End check for interest ?>
-	</div><!--end social-->
+			<img src="<?php echo get_stylesheet_directory_uri().'/style/images/rn_logo_50.png'; ?>"><br />
+			&copy;
+			<script type="text/javascript">
+				now = new Date
+				theYear=now.getYear()
+				if (theYear < 1900)
+				theYear=theYear+1900
+				document.write(theYear)
+			</script>
+			<a href="<?php echo home_url( '/' ) ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a><br />
+			<!--
+			<span><a href="http://www.rafael.nl" alt="Een Rafa&euml;l gemeente">Een Rafa&euml;l gemeente</a></span>
+			-->
+		</div><!--End copyright-->
+
+		<div class="social">
+			<?php /*Checks to see if primary admin has a Twitter or Facebook account. If so, it will display the icons next to the RSS icon in the main menu.  */ ?>
+			<?php if ( get_the_author_meta( 'facebook',1) ) { ?>
+			<div class="facebook">
+				<a href="<?php the_author_meta( 'facebook',1); ?>">Facebook</a>
+			</div>
+			<?php } // End check for facebook ?>
+
+			<?php if ( get_the_author_meta( 'googleplus',1) ) { ?>
+			<div class="googleplus">
+				<a href="<?php the_author_meta( 'googleplus',1); ?>">Google+</a>
+			</div>
+			<?php } // End check for google ?>
+
+			<?php if ( get_the_author_meta( 'twitter',1) ) { ?>
+			<div class="twitter">
+				<a href="http://twitter.com/<?php the_author_meta( 'twitter',1); ?>">Twitter</a>
+			</div>
+			<?php } // End check for twitter ?>
+
+			<?php if ( get_the_author_meta( 'pinterest',1) ) { ?>
+			<div class="pinterest">
+				<a href="http://pinterest.com/<?php the_author_meta( 'pinterest',1); ?>">Pinterest</a>
+			</div>
+			<?php } // End check for interest ?>
+		</div><!--end social-->
+
 	</div>
 </footer>
 

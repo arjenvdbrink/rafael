@@ -11,7 +11,7 @@
 .navbar-inner {
   background-image: url(images/quick-bar.png) !important;
   background-position-x: 50%;
-  background-position-y: 50%;
+  //background-position-y: 50%;
   background-size: initial;
   background-repeat-x: no-repeat;
   background-repeat-y: no-repeat;
@@ -19,9 +19,12 @@
   background-origin: initial;
   background-clip: initial;
   background-color: initial;
-  min-width: 960px;
 
-  height: 48px;
+  // No width, otherwise th bootstrap-menu is placed outside the visible area
+  //min-width: 960px;
+
+  // Don't set height because bootstrap-menu needs the space
+  // height: 48px;
 
   // Position the main-menu
   .container {
@@ -38,4 +41,39 @@
     // # todo: change the color of the placeholder
   }
 
+}
+
+footer {
+    background:url(images/rn_texture_bottom.png) no-repeat left bottom !important;
+    // background-image: url(images/rn_texture_bottom.png) !important;
+    // background-position-x: 50%;
+    // background-position-y: 50%;
+    background-size: initial;
+    background-repeat-x: no-repeat;
+    background-repeat-y: no-repeat;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+    height: 96px !important;
+    container {
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+    }
+}
+
+::-webkit-input-placeholder {
+   color: #000000 !important;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #000000 !important;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #000000 !important;
+}
+
+:-ms-input-placeholder {
+   color: #000000 !important;
 }

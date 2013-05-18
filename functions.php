@@ -8,8 +8,8 @@
  */
 
 // Set width/height of the header image
-define( 'HEADER_IMAGE_WIDTH', apply_filters( 'foursquare_header_image_width', 360 ) );
-define( 'HEADER_IMAGE_HEIGHT', apply_filters( 'foursquare_header_image_height', 120 ) );
+define( 'HEADER_IMAGE_WIDTH', apply_filters( 'foursquare_header_image_width', 270 ) );
+define( 'HEADER_IMAGE_HEIGHT', apply_filters( 'foursquare_header_image_height', 90 ) );
 
 /*
  * Find a way to load the rafael-stylesheet

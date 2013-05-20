@@ -16,7 +16,7 @@
 		<div class="copyright span6">
 
 			<img src="<?php echo get_stylesheet_directory_uri().'/style/images/rn_logo_50.png'; ?>"><br />
-			&copy;
+			&nbsp;&copy;
 			<script type="text/javascript">
 				now = new Date
 				theYear=now.getYear()

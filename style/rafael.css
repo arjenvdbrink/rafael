@@ -37,6 +37,9 @@ footer container {
   padding-bottom: 0px;
   margin-bottom: 0px;
 }
+footer .copyright {
+  margin-left: 0px;
+}
 ::-webkit-input-placeholder {
   color: #000000 !important;
 }

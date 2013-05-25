@@ -33,12 +33,16 @@ get_header(); ?>
 
 	<div class="info span6">
 
-				<?php
-		  $page = get_post(9);
-		$content = $page->post_content;
-		$content = apply_filters('the_content', $content);
-		$content = str_replace(']]>', ']]>', $content);
-		  ?>
+		<?php
+                // Get the the id of the page that is set as homepage.
+                $frontpage_id = get_option('page_on_front');
+
+                // ... and place the contents on the frontpage
+		        $page = get_post($frontpage_id);
+                $content = $page->post_content;
+                $content = apply_filters('the_content', $content);
+                $content = str_replace(']]>', ']]>', $content);
+		 ?>
 
 		<h2><?php echo $page->post_title;?></h2>
 		<article>

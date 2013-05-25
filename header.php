@@ -21,7 +21,6 @@
 
     <link rel="profile" href="http://gmpg.org/xfn/11" />
 
-
     <?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); ?>
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
     
@@ -79,7 +78,7 @@
       		<div class="nav-collapse">
 				<?php wp_nav_menu( array( 'menu' => 'main-menu', 'container' => false, 'menu_class' => 'nav', 'menu_id' => 'main-menu') ); ?>
 				<form method="get" action="<?php echo home_url( '/' ); ?>" id="search-form" class=" navbar-search pull-right">
-            		<input class="search-query" name="s" type="text" placeholder="Search">
+            		<input class="search-query" name="s" type="text" placeholder="Zoeken">
 				</form>
 			</div><!--End nav-collapse-->
 		</div><!--End container-->

@@ -44,7 +44,7 @@
 }
 
 footer {
-    background:url(images/rn_texture_bottom.png) no-repeat left bottom !important;
+    background:url(images/rn_texture_bottom.png) no-repeat right bottom !important;
     // background-image: url(images/rn_texture_bottom.png) !important;
     // background-position-x: 50%;
     // background-position-y: 50%;
@@ -55,17 +55,26 @@ footer {
     background-origin: initial;
     background-clip: initial;
     background-color: initial;
-    height: 96px !important;
+    height: 125px !important;
+
     container {
       padding-bottom: 0px;
       margin-bottom: 0px;
+      margin-left:10px !important;
+      margin-right:10px !important;
     }
+
     .copyright {
-      margin-left: 0px;
+      float: right !important;
+      bottom: 0 !important;
+      text-align: right;
+    }
+
+    .logo {
+      float: left !important;
+      bottom: 0 !important;
     }
 }
-
-
 
 ::-webkit-input-placeholder {
    color: #000000 !important;

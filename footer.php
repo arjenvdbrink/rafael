@@ -13,9 +13,11 @@
 
 <footer>
 	<div class="container">
-		<div class="copyright span6">
+        <div class="logo span4">
+            <img src="<?php echo get_stylesheet_directory_uri().'/style/images/rn_logo_50.png'; ?>"><br />
 
-			<img src="<?php echo get_stylesheet_directory_uri().'/style/images/rn_logo_50.png'; ?>"><br />
+        </div>
+		<div class="copyright span4">
 			&nbsp;&copy;
 			<script type="text/javascript">
 				now = new Date
@@ -29,6 +31,7 @@
 			<span><a href="http://www.rafael.nl" alt="Een Rafa&euml;l gemeente">Een Rafa&euml;l gemeente</a></span>
 			-->
 		</div><!--End copyright-->
+
 
 		<div class="social">
 			<?php /*Checks to see if primary admin has a Twitter or Facebook account. If so, it will display the icons next to the RSS icon in the main menu.  */ ?>

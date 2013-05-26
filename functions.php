@@ -21,12 +21,6 @@ function theme_styles()
 }
 add_action('wp_enqueue_scripts', 'theme_styles');
 
-// Override for NL Translation
-// Returns a "Continue Reading" link for excerpts
-//function foursquare_continue_reading_link() {
-//    return ' <p><a class="btn btn-primary" href="'. get_permalink() . '">' . __( 'Lees verder', 'foursquare' ) . '</a></p>';
-//}
-
 
 // Just override function to translate
 function foursquare_posted_on() {
@@ -64,3 +58,23 @@ function foursquare_posted_in() {
         the_title_attribute( 'echo=0' )
     );
 }
+
+
+// Override for NL Translation
+// Returns a "Continue Reading" link for excerpts
+
+function rafael_continue_reading_link() {
+    return ' <p><a class="btn btn-primary" href="'. get_permalink() . '">' . __( 'Lees verder', 'foursquare' ) . '</a></p>';
+}
+
+function rafael_auto_excerpt_more( $more ) {
+    return ' &hellip;' . rafael_continue_reading_link();
+}
+
+function my_child_theme_setup() {
+    remove_filter( 'excerpt_more', 'foursquare_auto_excerpt_more' );
+    add_filter( 'excerpt_more', 'rafael_auto_excerpt_more' );
+}
+
+// Execute the overrides after setting up the theme ...
+add_action( 'after_setup_theme', 'my_child_theme_setup' );

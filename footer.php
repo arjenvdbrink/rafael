@@ -12,12 +12,18 @@
 ?>
 
 <footer>
+
+    <div class="slogan">
+        <h2>Een vruchtbare familie van gezonde gemeenten</h2>
+    </div>
+
 	<div class="container">
-        <div class="logo span4">
+        <div class="logo span3">
             <img src="<?php echo get_stylesheet_directory_uri().'/style/images/rn_logo_50.png'; ?>"><br />
 
         </div>
-		<div class="copyright span4">
+
+		<div class="copyright span3">
 			&nbsp;&copy;
 			<script type="text/javascript">
 				now = new Date

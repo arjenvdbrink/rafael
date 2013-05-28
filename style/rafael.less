@@ -8,6 +8,11 @@
   background: url(images/bg-rafael.png) repeat !important;
 }
 
+// header logo
+header {
+  min-height: 94px;
+}
+
 .navbar-inner {
   background-image: url(images/quick-bar.png) !important;
   background-position-x: 50%;
@@ -43,6 +48,21 @@
 
 }
 
+
+#main-menu>.menu-item {
+  -moz-border-radius:8px !important;  /* for Firefox */
+  -webkit-border-radius:8px !important; /* for Webkit-Browsers */
+  border-radius:8px !important; /* regular */
+  //opacity:0.5 !important; /* Transparent Background 50% */
+  background-color: #111111 !important;
+}
+
+#content {
+  .info {
+    min-height: 200px !important;
+  }
+}
+
 footer {
     background:url(images/rn_texture_bottom.png) no-repeat right bottom !important;
     // background-image: url(images/rn_texture_bottom.png) !important;
@@ -65,13 +85,15 @@ footer {
       margin-top: 3px !important;
     }
 
+
+
     .slogan {
       background:url(images/bg_repeat.png) repeat;
       margin-top: 10px;
       margin-bottom: 10px;
       text-align: center;
-      padding-top: 14px;
-      height: 70px;
+      padding-top: 4px;
+      height: 36px;
     }
 
     .copyright {

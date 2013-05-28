@@ -49,19 +49,6 @@ get_header(); ?>
 		<?php echo $page->post_content;?>
 		</article>
 
-		<? /* This code retrieves our admin options from Maps and Services. */ ?>
-		<?
-		global $options;
-		foreach ($options as $value) {
-		if (get_settings( $value['id'] ) === FALSE) { $$value['id'] = $value['std']; } else { $$value['id'] = get_settings( $value['id'] ); }
-		}
-		?>
-		<br />
-
-		<h2><?php echo get_option('nt_maptitle'); ?></h2>
-		<iframe width="570" height="240" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="<?php echo get_option('nt_maplink'); ?>&output=embed"></iframe>
-
-
 	</div><!--end info-->
 </div><!--end content-->
 

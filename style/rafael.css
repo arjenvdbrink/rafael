@@ -25,18 +25,6 @@ header {
 .navbar-inner #main-menu > li > a {
   color: white;
 }
-#main-menu > .menu-item {
-  -moz-border-radius: 8px !important;
-  /* for Firefox */
-
-  -webkit-border-radius: 8px !important;
-  /* for Webkit-Browsers */
-
-  border-radius: 8px !important;
-  /* regular */
-
-  background-color: #111111 !important;
-}
 #content .info {
   min-height: 200px !important;
 }

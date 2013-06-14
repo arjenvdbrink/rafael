@@ -11,7 +11,7 @@ get_header(); ?>
 
 <div class="row">
 	<section id="blog" class="span7">
-	<?php if ( have_posts() ) : ?><h5><?php $search_count = 0; $search = new WP_Query("s=$s & showposts=-1"); if($search->have_posts()) : while($search->have_posts()) : $search->the_post(); $search_count++; endwhile; endif; echo $search_count;?> <?php printf( __( 'resultaten gevonden voor: %s', 'twentyten' ), '' . get_search_query() . '' ); ?></h5>
+	<?php if ( have_posts() ) : ?><h5><?php $search_count = 0; $search = new WP_Query("s=$s & showposts=-1 & post_status!=private"); if($search->have_posts()) : while($search->have_posts()) : $search->the_post(); $search_count++; endwhile; endif; echo $search_count;?> <?php printf( __( 'resultaten gevonden voor: %s', 'twentyten' ), '' . get_search_query() . '' ); ?></h5>
     <hr />
 	
 	<?php

@@ -17,7 +17,7 @@ header {
   background-attachment: initial;
   background-origin: initial;
   background-clip: initial;
-  background-color: initial;
+  background-color: #244682 !important;
 }
 .navbar-inner .container {
   padding-top: 4px;

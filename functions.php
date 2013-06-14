@@ -22,6 +22,17 @@ function theme_styles()
 add_action('wp_enqueue_scripts', 'theme_styles');
 
 
+/*
+ * Nex code is needed to remove the admin-bar from the frontend
+ */
+add_action('init', 'remove_admin_bar');
+
+function remove_admin_bar() {
+    if (!current_user_can('administrator') && !is_admin()) {
+        show_admin_bar(false);
+    }
+}
+
 // Just override function to translate
 function foursquare_posted_on() {
     printf( __( '<span class="%1$s">Geplaatst op </span> %2$s <span class="meta-sep">door</span> %3$s', 'foursquare' ),

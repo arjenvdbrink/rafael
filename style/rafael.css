@@ -25,6 +25,10 @@ header {
 .navbar-inner #main-menu > li > a {
   color: white;
 }
+.nav .current-menu-item > a {
+  background-color: #921d1d !important;
+  border-radius: 5px;
+}
 #content .info {
   min-height: 200px !important;
 }

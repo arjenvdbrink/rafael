@@ -8,11 +8,11 @@
 
 get_header(); ?>
 
-<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
+<?php if (have_posts()) while (have_posts()) : the_post(); ?>
 
-<h1><?php the_title(); ?></h1>&nbsp;
-<?php the_content(); ?> &nbsp;
+    <h1><?php the_title(); ?></h1>&nbsp;
+    <?php the_content(); ?> &nbsp;
 
 <?php endwhile; // end of the loop. ?>
 
-<?php get_footer();  ?>
+<?php get_footer(); ?>

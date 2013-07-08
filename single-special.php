@@ -15,4 +15,6 @@ get_header(); ?>
 
 <?php endwhile; // end of the loop. ?>
 
+</div><!--end container (in header.php)-->
+
 <?php get_footer(); ?>

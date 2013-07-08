@@ -60,12 +60,9 @@ get_header(); ?>
 
 <?php endwhile; // end of the loop. ?>
 
+</div><!--end container (in header.php)-->
 
-<table border="0" align="center" width="100%">
-    <tr>
-        <td width="100%"><?php get_footer(); ?></td>
+<?php get_footer(); ?>
 
-    </tr>
-</table>
 
 

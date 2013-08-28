@@ -33,7 +33,7 @@ header {
   color: black !important;
 }
 .nav .sub-menu {
-  max-width: 260px;
+  max-width: 260px !important;
 }
 #content .info {
   min-height: 200px !important;

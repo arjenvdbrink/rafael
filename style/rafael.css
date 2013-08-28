@@ -7,6 +7,7 @@
 }
 header {
   min-height: 94px;
+  margin-top: 45px !important;
 }
 .navbar-inner {
   background-image: url(images/quick-bar.png) !important;
@@ -30,6 +31,9 @@ header {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   color: black !important;
+}
+.nav .sub-menu {
+  max-width: 260px;
 }
 #content .info {
   min-height: 200px !important;
@@ -81,4 +85,7 @@ footer .logo {
 }
 aside#sidebar li {
   list-style-type: none !important;
+}
+.canvas img {
+  max-width: none !important;
 }

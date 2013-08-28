@@ -11,6 +11,7 @@
 // header logo
 header {
   min-height: 94px;
+  margin-top: 45px !important;
 }
 
 .navbar-inner {
@@ -53,8 +54,9 @@ header {
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     color: black !important;
-
-
+  }
+  .sub-menu {
+    max-width: 260px;
   }
 }
 
@@ -119,4 +121,9 @@ footer {
 
 aside#sidebar li {
   list-style-type: none !important;
+}
+
+// Need to reset images for google maps canvas.
+.canvas img {
+  max-width: none !important;
 }

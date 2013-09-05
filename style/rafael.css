@@ -86,6 +86,6 @@ footer .logo {
 aside#sidebar li {
   list-style-type: none !important;
 }
-.canvas img {
+div.canvas img {
   max-width: none !important;
 }

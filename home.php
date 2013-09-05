@@ -11,6 +11,11 @@
 
 get_header(); ?>
 
+
+<section id="hero" class="masthead">
+    <?php echo do_shortcode("[flexslider]"); ?>
+</section>
+
 <section id="content" class="row">
 
 	<div class="news span5">

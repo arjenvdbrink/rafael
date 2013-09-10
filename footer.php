@@ -19,7 +19,7 @@
 
 	<div class="container">
         <div class="logo span3">
-            <img src="<?php echo get_stylesheet_directory_uri().'/style/images/rn_logo_50.png'; ?>"><br />
+            <img src="<?php echo get_stylesheet_directory_uri().'/style/images/rn_logo_small.png'; ?>"><br />
 
         </div>
 

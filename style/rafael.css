@@ -9,6 +9,9 @@ header {
   min-height: 94px;
   margin-top: 45px !important;
 }
+footer .logo img {
+  height: 30px !important;
+}
 .navbar-inner {
   background-image: url(images/quick-bar.png) !important;
   background-position-x: 50%;

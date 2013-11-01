@@ -22,7 +22,7 @@ get_header(); ?>
 					<div class="modal hide fade" id="featuredImage">     
     					<div class="modal-header"> 
         					<a class="close" data-dismiss="modal">×</a> 
-        					<h3>Featured Image</h3>         
+        					<h3>Uitgelichte Afbeelding</h3>
    						</div>     
     					<div class="modal-body">         
        						<?php echo get_the_post_thumbnail( $id, '' ); ?>
@@ -41,12 +41,12 @@ get_header(); ?>
 			<div class="bottom-nav">
 				<?php if (get_adjacent_post(false, '', true)): // if there are older posts ?>
     				<div class="btn btn-primary pull-left">
-    					<?php previous_post_link( '%link', '' . _x( '« ', 'Older Post', 'foursquare' ) . 'Older Post' ); ?>
+    					<?php previous_post_link( '%link', '' . _x( '« ', 'Ouder bericht', 'foursquare' ) . 'Ouder bericht' ); ?>
    					</div>
 				<?php endif; ?>
 				<?php if (get_adjacent_post(false, '', false)): // if there are newer posts ?>
     				<div class="btn btn-primary pull-right">
-    					<?php next_post_link( '%link', 'Newer Post ' . _x( ' »', 'Next post link', 'foursquare' ) . '' ); ?>
+    					<?php next_post_link( '%link', 'Nieuwer Bericht ' . _x( ' »', 'Next post link', 'foursquare' ) . '' ); ?>
     				</div> <!--end btn btn-primary-->
 				<?php endif; ?>
 			</div><!--end bottom-nav-->

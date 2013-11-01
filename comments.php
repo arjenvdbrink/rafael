@@ -64,7 +64,7 @@
 	 */
 	if ( ! comments_open() ) :
 	?>
-        <p>Het is niet (meer) mogelijk om te reageren.</p>
+        <p>Het is niet (meer) mogelijk om te reageren. </p>
 	<?php endif; // end ! comments_open() ?>
 
 	<?php endif; // end have_comments() ?>

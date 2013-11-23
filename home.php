@@ -36,25 +36,39 @@ get_header(); ?>
 		<?php endwhile; ?>
 	</div><!--end news-->
 
-	<div class="info span6">
+    <aside class="span6">
+        <div class="info">
 
-		<?php
-                // Get the the id of the page that is set as homepage.
-                $frontpage_id = get_option('page_on_front');
+            <?php
+                    // Get the the id of the page that is set as homepage.
+                    $frontpage_id = get_option('page_on_front');
 
-                // ... and place the contents on the frontpage
-		        $page = get_post($frontpage_id);
-                $content = $page->post_content;
-                $content = apply_filters('the_content', $content);
-                $content = str_replace(']]>', ']]>', $content);
-		 ?>
+                    // ... and place the contents on the frontpage
+                    $page = get_post($frontpage_id);
+                    $content = $page->post_content;
+                    $content = apply_filters('the_content', $content);
+                    $content = str_replace(']]>', ']]>', $content);
+             ?>
 
-		<h2><?php echo $page->post_title;?></h2>
-		<article>
-		<?php echo $page->post_content;?>
-		</article>
+            <h2><?php echo $page->post_title;?></h2>
+            <article>
+                <?php echo $page->post_content;?>
+            </article>
 
-	</div><!--end info-->
+
+        </div><!--end info-->
+
+        <div class="info">
+            <h2>Agenda: </h2>
+            <article>
+                <?php the_widget('TribeEventsListWidget'); ?>
+            </article>
+        </div>
+
+    </aside>
+
+
+
 </div><!--end content-->
 
 <?php include ('sidebar-footer.php'); ?>

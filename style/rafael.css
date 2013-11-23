@@ -39,7 +39,9 @@ footer .logo img {
   max-width: 260px !important;
 }
 #content .info {
-  min-height: 200px !important;
+  min-height: 150px !important;
+  min-width: 100% !important;
+  margin-bottom: 15px;
 }
 footer {
   background: url(images/rn_texture_bottom.png) no-repeat bottom !important;
@@ -94,4 +96,8 @@ div.canvas img {
 }
 input.search-query {
   width: 110px !important;
+}
+
+.tribe-events-list-widget ol {
+    list-style: none;
 }

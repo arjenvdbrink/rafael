@@ -18,7 +18,7 @@ get_header(); ?>
 
 <section id="content" class="row">
 
-	<div class="news span8">
+	<div class="news span7">
 		<h1>Laatste nieuws</h1>
 		<?php
 		// The Query
@@ -37,7 +37,7 @@ get_header(); ?>
 		<?php endwhile; ?>
 	</div><!--end news-->
 
-    <aside class="span3">
+    <aside class="span4">
         <div class="info">
 
             <?php

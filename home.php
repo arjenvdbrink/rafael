@@ -18,7 +18,7 @@ get_header(); ?>
 
 <section id="content" class="row">
 
-	<div class="news span5">
+	<div class="news span8">
 		<h1>Laatste nieuws</h1>
 		<?php
 		// The Query
@@ -30,13 +30,14 @@ get_header(); ?>
 				<a href="<?php the_permalink(); ?>"><?php echo get_the_post_thumbnail( $id, 'thumbnail' ); ?></a>
 				<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 				<?php wpe_excerpt('wpe_excerptlength_teaser', 'wpe_excerptmore'); ?>
+				<a class="btn btn-primary" > Lees verder</a>
 				<hr />
 			</article>
 
 		<?php endwhile; ?>
 	</div><!--end news-->
 
-    <aside class="span6">
+    <aside class="span3">
         <div class="info">
 
             <?php
@@ -67,9 +68,7 @@ get_header(); ?>
 
     </aside>
 
-
-
-</div><!--end content-->
+</section><!--end content-->
 
 <?php include ('sidebar-footer.php'); ?>
 

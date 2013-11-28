@@ -9,6 +9,10 @@ header {
   min-height: 94px;
   margin-top: 45px !important;
 }
+header .logo-custom {
+  margin-bottom: 15px !important;
+  margin-top: 15px !important;
+}
 footer .logo img {
   height: 30px !important;
 }
@@ -48,7 +52,7 @@ footer {
   background-size: 100% 70%  !important;
   height: 200px !important;
 }
-footer container {
+footer .container {
   padding-bottom: 0px;
   margin-bottom: 0px;
   margin-left: 10px !important;
@@ -77,12 +81,10 @@ footer .logo {
 }
 :-moz-placeholder {
   /* Firefox 18- */
-
   color: #000000 !important;
 }
 ::-moz-placeholder {
   /* Firefox 19+ */
-
   color: #000000 !important;
 }
 :-ms-input-placeholder {
@@ -97,7 +99,7 @@ div.canvas img {
 input.search-query {
   width: 110px !important;
 }
-
 .tribe-events-list-widget ol {
-    list-style: none;
+  list-style: none;
+  margin-left: 0px;
 }

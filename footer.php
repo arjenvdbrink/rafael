@@ -20,10 +20,9 @@
 	<div class="container">
         <div class="logo span3">
             <img src="<?php echo get_stylesheet_directory_uri().'/style/images/rn_logo_small.png'; ?>"><br />
-
         </div>
 
-		<div class="copyright span3">
+		<div class="copyright span2">
 			&nbsp;&copy;
 			<script type="text/javascript">
 				now = new Date
@@ -33,37 +32,15 @@
 				document.write(theYear)
 			</script>
 			<a href="<?php echo home_url( '/' ) ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a><br />
-			<!--
-			<span><a href="http://www.rafael.nl" alt="Een Rafa&euml;l gemeente">Een Rafa&euml;l gemeente</a></span>
-			-->
+
 		</div><!--End copyright-->
 
 
-		<div class="social">
-			<?php /*Checks to see if primary admin has a Twitter or Facebook account. If so, it will display the icons next to the RSS icon in the main menu.  */ ?>
-			<?php if ( get_the_author_meta( 'facebook',1) ) { ?>
-			<div class="facebook">
-				<a href="<?php the_author_meta( 'facebook',1); ?>">Facebook</a>
-			</div>
-			<?php } // End check for facebook ?>
-
-			<?php if ( get_the_author_meta( 'googleplus',1) ) { ?>
-			<div class="googleplus">
-				<a href="<?php the_author_meta( 'googleplus',1); ?>">Google+</a>
-			</div>
-			<?php } // End check for google ?>
-
-			<?php if ( get_the_author_meta( 'twitter',1) ) { ?>
-			<div class="twitter">
-				<a href="http://twitter.com/<?php the_author_meta( 'twitter',1); ?>">Twitter</a>
-			</div>
-			<?php } // End check for twitter ?>
-
-			<?php if ( get_the_author_meta( 'pinterest',1) ) { ?>
-			<div class="pinterest">
-				<a href="http://pinterest.com/<?php the_author_meta( 'pinterest',1); ?>">Pinterest</a>
-			</div>
-			<?php } // End check for interest ?>
+		<div class="social span4">
+				<a href="http://www.twitter.com/rafaelnederland/"><img class="alignright size-full wp-image-544" alt="twitter-icon" src="http://rafael.zerotop.eu/wp-content/uploads/2013/05/twitter-icon.png" width="38" height="38" /></a>
+				<a href="https://www.facebook.com/pages/Rafa%C3%ABl-Nederland/184240724950982?fref=ts"><img class="alignright size-full wp-image-543" alt="facebook-icon"
+																											src="http://rafael.zerotop.eu/wp-content/uploads/2013/05/facebook-icon.png" width="38" height="38" /></a>
+				<a href="https://plus.google.com/100946726272343026292"><img class="alignright size-full wp-image-555" alt="gplus-icon" src="http://rafael.zerotop.eu/wp-content/uploads/2013/05/gplus-icon.png" width="38" height="38" /></a>
 		</div><!--end social-->
 
 	</div>

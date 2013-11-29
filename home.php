@@ -30,7 +30,7 @@ get_header(); ?>
 				<a href="<?php the_permalink(); ?>"><?php echo get_the_post_thumbnail( $id, 'thumbnail' ); ?></a>
 				<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 				<?php wpe_excerpt('wpe_excerptlength_teaser', 'wpe_excerptmore'); ?>
-				<a class="btn btn-primary" > Lees verder</a>
+				<a class="btn btn-primary" href="<?php the_permalink(); ?>">Lees verder</a>
 				<hr />
 			</article>
 

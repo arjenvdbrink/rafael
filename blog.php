@@ -27,7 +27,7 @@ get_header(); ?>
 			<?php endif;?>
     		
     		<h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
-    		<h2><small>Posted in: &nbsp;<a href="<?php bloginfo('url'); ?>/category/<?php $category = get_the_category(); echo $category[0]->category_nicename; ?>" title="<?php echo $category[0]->category_nicename; ?>"><?php $category = get_the_category(); echo $category[0]->cat_name;?></a></small></h2>
+    		<h2><small>Geplatst in: &nbsp;<a href="<?php bloginfo('url'); ?>/category/<?php $category = get_the_category(); echo $category[0]->category_nicename; ?>" title="<?php echo $category[0]->category_nicename; ?>"><?php $category = get_the_category(); echo $category[0]->cat_name;?></a></small></h2>
     		<?php the_excerpt(); ?>
        	</article><!--end post-->
 		<?php endwhile; ?>

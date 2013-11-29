@@ -21,7 +21,6 @@
         <div class="logo span3">
             <img src="<?php echo get_stylesheet_directory_uri().'/style/images/rn_logo_small.png'; ?>"><br />
         </div>
-
 		<div class="copyright span2">
 			&nbsp;&copy;
 			<script type="text/javascript">
@@ -34,8 +33,6 @@
 			<a href="<?php echo home_url( '/' ) ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a><br />
 
 		</div><!--End copyright-->
-
-
 		<div class="social span4">
 				<a href="http://www.twitter.com/rafaelnederland/"><img class="alignright size-full wp-image-544" alt="twitter-icon" src="http://rafael.zerotop.eu/wp-content/uploads/2013/05/twitter-icon.png" width="38" height="38" /></a>
 				<a href="https://www.facebook.com/pages/Rafa%C3%ABl-Nederland/184240724950982?fref=ts"><img class="alignright size-full wp-image-543" alt="facebook-icon"

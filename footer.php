@@ -34,10 +34,31 @@
 
 		</div><!--End copyright-->
 		<div class="social span4">
-				<a href="http://www.twitter.com/rafaelnederland/"><img class="alignright size-full wp-image-544" alt="twitter-icon" src="http://rafael.zerotop.eu/wp-content/uploads/2013/05/twitter-icon.png" width="38" height="38" /></a>
-				<a href="https://www.facebook.com/pages/Rafa%C3%ABl-Nederland/184240724950982?fref=ts"><img class="alignright size-full wp-image-543" alt="facebook-icon"
-																											src="http://rafael.zerotop.eu/wp-content/uploads/2013/05/facebook-icon.png" width="38" height="38" /></a>
-				<a href="https://plus.google.com/100946726272343026292"><img class="alignright size-full wp-image-555" alt="gplus-icon" src="http://rafael.zerotop.eu/wp-content/uploads/2013/05/gplus-icon.png" width="38" height="38" /></a>
+				<a href="http://www.twitter.com/rafaelnederland/">
+					<img class="alignright size-full"
+						 alt="twitter-icon"
+						 src="<?php echo get_stylesheet_directory_uri().'/style/icons/48x48/twitter-icon.png'; ?>"
+						 width="38"
+						 height="38" /></a>
+				<a href="https://www.facebook.com/pages/Rafa%C3%ABl-Nederland/184240724950982?fref=ts">
+					<img class="alignright size-full"
+						 alt="facebook-icon"
+						 src="<?php echo get_stylesheet_directory_uri().'/style/icons/48x48/facebook-icon.png'; ?>"
+						 width="38"
+						 height="38" /></a>
+				<a href="https://plus.google.com/100946726272343026292">
+					<img class="alignright size-full"
+						 alt="gplus-icon"
+						 src="<?php echo get_stylesheet_directory_uri().'/style/icons/48x48/gplus-icon.png'; ?>"
+						 width="38"
+						 height="38" /></a>
+				<a href="/feed/">
+					<img class="alignright size-full"
+						 alt="rss-icon"
+					 	src="<?php echo get_stylesheet_directory_uri().'/style/icons/48x48/rss-icon.png'; ?>"
+					 	width="38"
+					 	height="38" /></a>
+
 		</div><!--end social-->
 
 	</div>

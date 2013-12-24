@@ -19,7 +19,7 @@
 
 	<div class="container">
         <div class="logo span3">
-            <img src="<?php echo get_stylesheet_directory_uri().'/style/images/rn_logo_small.png'; ?>"><br />
+			<a href="http://rafael.nl/"><img src="<?php echo get_stylesheet_directory_uri().'/style/images/rn_logo_small.png'; ?>"></a><br />
         </div>
 		<div class="copyright span2">
 			&nbsp;&copy;
